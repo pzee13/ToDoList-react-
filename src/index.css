@@ -1,0 +1,184 @@
+body {
+  background: url("src/assets/time-organization-concept-close-up.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 90vh;
+  font-family: "Poppins", sans-serif;
+  backdrop-filter: blur(4px) saturate(180%);
+
+}
+
+.to-do-list {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  margin: 0 auto;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+
+}
+
+h1 {
+  font-size: 4rem;
+  color: rgb(0, 0, 0,0.8);
+}
+
+button {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  flex-shrink: 0;
+  height: 50px;
+}
+
+.add-button {
+  margin-left: 10px;
+  align-items: center;
+  background-color: rgba(72, 192, 80, 0.8); 
+}
+
+.add-button:hover {
+  background-color: rgba(36, 181, 46, 0.8); 
+}
+
+.delete-button {
+  margin-left: 20px;
+  background-color: rgba(230, 77, 56, 0.8); 
+}
+
+.delete-button:hover {
+  background-color: rgba(129, 29, 16, 0.8); 
+}
+
+.move-button {
+  background-color: rgba(0, 166, 209, 0.8); 
+}
+
+.move-button:hover {
+  background-color: rgba(3, 121, 148, 0.8);
+}
+
+.edit-button {
+  background-color: rgba(122, 156, 200, 0.8); 
+}
+
+.edit-button:hover {
+  background-color: rgba(93, 111, 136, 0.8); 
+}
+
+
+input[type="text"] {
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 0.5);
+  border-radius: 5px;
+  color: hsl(0, 0%, 0.5);
+}
+
+
+
+ol {
+  padding: 0px 300px;
+  margin: 0;
+  display: inline-block; 
+}
+
+li {
+  margin-top: 1.7rem;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  backdrop-filter: blur(0px) saturate(180%);
+  -webkit-backdrop-filter: blur(0px) saturate(180%);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  align-items: center;
+}
+
+
+li:hover{
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.01);
+  color: black;
+  transition: 1s;
+}
+
+
+
+.text{
+  flex: 1;
+}
+
+
+
+.editing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.editing input[type="text"] {
+  margin-bottom: 10px;
+}
+
+.editing button {
+  margin-top: 10px;
+}
+
+.add-button,
+.add-button:hover,
+.delete-button,
+.delete-button:hover,
+.move-button,
+.move-button:hover,
+.edit-button,
+.edit-button:hover {
+ margin-right: 10px;
+}
+
+.button-img{
+  height: 30px;
+}
+.button-img{
+  height: 25px;
+}
+.save-button {
+  background-color: rgba(255, 193, 7, 0.7); 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.editing button.save-button:hover {
+  background-color: rgb(255, 200, 35); 
+}
+
+.error-message{
+  width: 300px;
+  font-size: 1.4em;
+  margin: 0 auto 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 90, 69, 1);
+}
+
